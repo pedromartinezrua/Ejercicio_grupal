@@ -2,7 +2,7 @@
 
 # Definicion de la clase animal
 class Animal:
-  def __init__(self, nombre):
+  def _init_(self, nombre):
     self.nombre=nombre
 
   def hablar (self):
@@ -48,6 +48,7 @@ class Anfibio(Terrestre, Acuatico):
 rana = Anfibio("Rana")
 lobo = Terrestre("Lobo")
 pescao = Acuatico("Pescao")
+print("El programa va a empezar")
 # Llamado al metodo "desplazamiento" heredado de terrestre
 rana.desplazamiento()
 lobo.desplazamiento()
@@ -58,3 +59,4 @@ rana.hablar("tierra") # salida: rana emite sonidos terrestres
 rana.comer()
 lobo.comer()
 pescao.comer()
+print("El programa ha terminado")
